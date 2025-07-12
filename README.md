@@ -19,6 +19,12 @@ A remake of the classic Duck Hunt game with physics-based movement using **Box2D
 - [PyBox2D](https://github.com/pybox2d/pybox2d) (for physics simulation)
 
 ---
+## 🖼️ Demo Screenshots
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+---
 
 ## 💻 How to run
 

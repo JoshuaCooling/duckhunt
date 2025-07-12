@@ -79,17 +79,17 @@ class Duck:
         self.body.CreateCircleFixture(radius=0.5, density=1, friction=0.3)
         self.body.userData = self
         self.alive = True
-        self.image = pygame.image.load('duck.png')
+        self.image = pygame.image.load('images/duck.png')
         self.image = pygame.transform.scale(self.image, (50, 50))
         self.upward_force_timer = 0
         
         # Set movement direction of the duck
         self.direction = 1 if x < WIDTH // 2 else -1  
         if self.direction == 1:
-            self.image = pygame.image.load('duck.png')
+            self.image = pygame.image.load('images/duck.png')
             self.image = pygame.transform.scale(self.image, (50, 50))
         elif self.direction == -1:
-            self.image = pygame.image.load('duck1.png')
+            self.image = pygame.image.load('images/duck1.png')
             self.image = pygame.transform.scale(self.image, (50, 50))
 
         # Increase speed based on level
@@ -158,13 +158,13 @@ contact_listener = MyContactListener(game_world)
 game_world.contactListener = contact_listener
 
 # Load images
-background = pygame.image.load("bg.jpg")
+background = pygame.image.load("images/bg.jpg")
 background = pygame.transform.scale(background, (WIDTH, HEIGHT))
 
-dog_image = pygame.image.load('dog.png')
+dog_image = pygame.image.load('images/dog.png')
 dog_image = pygame.transform.scale(dog_image, (90, 90))
 
-nuke_image = pygame.image.load('nuke.png')
+nuke_image = pygame.image.load('images/nuke.png')
 nuke_image = pygame.transform.scale(nuke_image, (40, 60))
 
 ducks_spawned += 1
